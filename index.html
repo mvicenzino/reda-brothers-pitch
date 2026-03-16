@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reda Brothers Landscape — Premier Hardscape & Outdoor Design | Morris County, NJ</title>
+<meta name="description" content="Reda Brothers Landscape Inc. — 28 years of premier hardscape design and construction in Morris County, NJ. Custom pools, stone patios, outdoor kitchens, and estate landscaping. BBB A+ Rated.">
+<meta property="og:title" content="Reda Brothers Landscape — Premier Hardscape & Outdoor Design">
+<meta property="og:description" content="28 years of premier hardscape design and construction for distinguished properties across Morris County, New Jersey.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1A1A18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #F7F6F2;
+  --bg-warm: #EFEDE6;
+  --white: #FFFFFF;
+  --ink: #1A1A18;
+  --ink-soft: #3A3935;
+  --caption: #7D7972;
+  --border: #DAD6CE;
+  --border-light: #EAE7E0;
+  --bronze: #8B7D6B;
+  --bronze-dark: #6B5D4B;
+  --accent: #2C3E2D;
+  --accent-light: #3D5240;
+  --warm-stone: #C4BAA8;
+  --highlight: #B8A07A;
+  --font-display: 'Lora', Georgia, serif;
+  --font-body: 'Figtree', 'Segoe UI', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent); color: var(--bg); }
+
+/* ═══════════ NAV ═══════════ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 1.25rem 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.12) 70%, transparent 100%);
+  backdrop-filter: blur(6px) saturate(1.2);
+  -webkit-backdrop-filter: blur(6px) saturate(1.2);
+}
+
+.nav.scrolled {
+  background: rgba(247, 246, 242, 0.82);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  padding: 0.85rem 4%;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 0 0 0.5px rgba(255,255,255,0.5) inset;
+}
+
+.nav.hero-mode:not(.scrolled) .nav-logo-mark,
+.nav.hero-mode:not(.scrolled) .nav-logo-sub,
+.nav.hero-mode:not(.scrolled) .nav-links a { color: #fff; }
+.nav.hero-mode:not(.scrolled) .nav-logo-sub { color: rgba(255,255,255,0.6); }
+.nav.hero-mode:not(.scrolled) .nav-links a:not(.nav-cta-link) { color: rgba(255,255,255,0.85); }
+.nav.hero-mode:not(.scrolled) .mobile-toggle span { background: #fff; }
+.nav.hero-mode:not(.scrolled) .logo-stone { fill: #fff; }
+.nav.hero-mode:not(.scrolled) .logo-accent { fill: rgba(255,255,255,0.45); }
+
+.nav-logo {
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  transition: all 0.5s;
+}
+
+.nav-logo-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-stone { fill: var(--ink); transition: fill 0.5s; }
+.logo-accent { fill: var(--caption); transition: fill 0.5s; }
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.nav-logo-mark {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  transition: color 0.5s;
+}
+
+.nav-logo-sub {
+  font-size: 0.5rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 0.3rem;
+  transition: all 0.5s;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--ink); }
+
+.nav-cta-link {
+  padding: 0.55rem 1.5rem !important;
+  background: #fff;
+  color: var(--ink) !important;
+  border-radius: 100px;
+  font-weight: 600 !important;
+  transition: all 0.3s !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav.scrolled .nav-cta-link { background: var(--ink); color: var(--bg) !important; }
+.nav-cta-link:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important; }
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.mobile-toggle span {
+  width: 22px; height: 1.5px;
+  background: var(--ink);
+  transition: all 0.3s;
+}
+
+/* ═══════════ HERO ═══════════ */
+.hero-full {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.hero-slideshow { position: absolute; inset: 0; }
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+  will-change: opacity, transform;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  animation: ken-burns 8s ease-out forwards;
+}
+
+@keyframes ken-burns {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20,20,18,0.35) 0%, rgba(20,20,18,0.05) 35%, rgba(20,20,18,0.6) 100%),
+    linear-gradient(90deg, rgba(20,20,18,0.65) 0%, rgba(20,20,18,0.05) 55%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8%;
+  max-width: 960px;
+}
+
+.hero-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 0.8s 0.3s forwards;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  width: 40px; height: 1px;
+  background: rgba(255,255,255,0.35);
+}
+
+.hero-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5.5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 1s 0.5s forwards;
+}
+
+.hero-content h1 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 0.8s 0.7s forwards;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 0.8s 0.9s forwards;
+}
+
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2.15rem;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 100px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.btn-hero svg { width: 14px; height: 14px; }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.75rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
+.btn-ghost svg { width: 14px; height: 14px; }
+
+.hero-dots {
+  position: absolute;
+  bottom: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dot {
+  width: 40px; height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+.hero-dot:hover { background: rgba(255,255,255,0.35); }
+.hero-dot.active { background: rgba(255,255,255,0.15); }
+
+.hero-dot-fill {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 0;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.hero-dot.active .hero-dot-fill {
+  animation: dot-fill 7s linear forwards;
+}
+
+@keyframes dot-fill {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.5s forwards;
+}
+
+.hero-scroll span {
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.hero-scroll-mouse {
+  width: 22px;
+  height: 34px;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 11px;
+  position: relative;
+}
+
+.hero-scroll-mouse::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 6px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 3px;
+  animation: scroll-dot 2s ease-in-out infinite;
+}
+
+@keyframes scroll-dot {
+  0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 0.3; transform: translateX(-50%) translateY(8px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════ TRUST BAR ═══════════ */
+.trust-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--white);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.trust-item {
+  padding: 2.75rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.trust-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 25%; height: 50%;
+  width: 1px;
+  background: var(--border-light);
+}
+
+.trust-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.trust-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--caption);
+  font-weight: 500;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.trust-badge svg { width: 11px; height: 11px; }
+
+/* ═══════════ SECTIONS COMMON ═══════════ */
+.section-num {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.section-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 0.85rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.section-title em { font-style: italic; font-weight: 400; }
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2.15rem;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 100px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-dark:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(44,62,45,0.2); }
+.btn-dark svg { width: 14px; height: 14px; }
+
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: gap 0.3s;
+}
+
+.btn-text:hover { gap: 0.85rem; }
+.btn-text svg { width: 16px; height: 16px; }
+
+/* ═══════════ INTRO ═══════════ */
+.intro {
+  padding: 7rem 8%;
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.intro-left { position: sticky; top: 7rem; }
+
+.intro-text p {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: var(--caption);
+  margin-bottom: 1.25rem;
+}
+
+.intro-text p:first-child {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.intro-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.intro-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.intro-feature svg {
+  width: 16px; height: 16px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ═══════════ SERVICES ═══════════ */
+.services { padding: 0 8% 7rem; }
+
+.services-header {
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.service-card {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.service-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-card-bg { transform: scale(1.06); }
+
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20,20,18,0) 30%, rgba(20,20,18,0.75) 100%);
+  transition: background 0.4s;
+}
+
+.service-card:hover .service-card-overlay {
+  background: linear-gradient(180deg, rgba(20,20,18,0.1) 20%, rgba(20,20,18,0.85) 100%);
+}
+
+.service-card-content {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.service-card-num {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.5rem;
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.service-card p {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.65);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s;
+  opacity: 0;
+}
+
+.service-card:hover p { max-height: 80px; opacity: 1; }
+
+/* ═══════════ SHOWCASE ═══════════ */
+.showcase {
+  padding: 0;
+  position: relative;
+}
+
+.showcase-image {
+  width: 100%;
+  height: 75vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.showcase-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20,20,18,0) 40%, rgba(20,20,18,0.7) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 5rem 8%;
+}
+
+.showcase-text {
+  max-width: 600px;
+  color: #fff;
+}
+
+.showcase-text .section-label { color: rgba(255,255,255,0.5); }
+
+.showcase-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.showcase-text h2 em { font-style: italic; font-weight: 400; }
+
+.showcase-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ═══════════ PORTFOLIO ═══════════ */
+.portfolio {
+  padding: 7rem 0;
+  background: var(--white);
+}
+
+.portfolio-header {
+  padding: 0 8%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+.portfolio-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 8%;
+  display: flex;
+  gap: 1.5rem;
+  scrollbar-width: none;
+}
+
+.portfolio-scroll::-webkit-scrollbar { display: none; }
+
+.portfolio-card {
+  flex-shrink: 0;
+  width: 360px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-card-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.15rem;
+}
+
+.portfolio-card-bg {
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center 30%;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-card:hover .portfolio-card-bg { transform: scale(1.04); }
+
+.portfolio-card-tag {
+  position: absolute;
+  top: 0.85rem; left: 0.85rem;
+  padding: 0.3rem 0.75rem;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 100px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.portfolio-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.portfolio-card p {
+  font-size: 0.8rem;
+  color: var(--caption);
+}
+
+.portfolio-nav {
+  display: flex;
+  gap: 0.65rem;
+  padding: 2.5rem 8% 0;
+  justify-content: center;
+}
+
+.portfolio-nav button {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.portfolio-nav button:hover { background: var(--ink); border-color: var(--ink); }
+.portfolio-nav button:hover svg { color: var(--bg); }
+.portfolio-nav button svg { width: 16px; height: 16px; color: var(--ink); transition: color 0.3s; }
+
+/* ═══════════ INSTAGRAM CTA ═══════════ */
+.insta-bar {
+  padding: 3rem 8%;
+  background: var(--white);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.insta-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.insta-bar a:hover { color: var(--accent); }
+.insta-bar a svg { width: 20px; height: 20px; }
+
+.insta-bar span {
+  color: var(--caption);
+  font-size: 0.82rem;
+}
+
+/* ═══════════ PROCESS ═══════════ */
+.process { padding: 7rem 8%; }
+
+.process-header { max-width: 600px; margin-bottom: 4rem; }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.process-step {
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  border-left: 1px solid var(--border);
+  position: relative;
+}
+
+.process-step:first-child { border-left: 1px solid var(--border); padding-left: 2rem; }
+
+.process-step::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -1px;
+  width: 1px; height: 0;
+  background: var(--accent);
+  transition: height 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.process-step.visible::before { height: 100%; }
+
+.step-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--caption);
+  margin-bottom: 1.5rem;
+  transition: all 0.6s;
+}
+
+.process-step.visible .step-num {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(44, 62, 45, 0.05);
+}
+
+.process-step h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.65rem;
+}
+
+.process-step p {
+  font-size: 0.86rem;
+  line-height: 1.7;
+  color: var(--caption);
+}
+
+/* ═══════════ TESTIMONIALS ═══════════ */
+.testimonials {
+  padding: 6rem 8%;
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.testimonials .section-label { color: var(--warm-stone); }
+.testimonials .section-title { color: var(--bg); }
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  margin-top: 3.5rem;
+  align-items: start;
+}
+
+.testimonial-featured {
+  border-left: 2px solid var(--accent-light);
+  padding-left: 2.5rem;
+}
+
+.testimonial-featured blockquote {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: rgba(247, 246, 242, 0.85);
+  margin-bottom: 2rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.testimonial-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--bg);
+}
+
+.testimonial-info h5 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--bg);
+}
+
+.testimonial-info span {
+  font-size: 0.75rem;
+  color: rgba(247, 246, 242, 0.4);
+}
+
+.testimonial-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.testimonial-card {
+  padding: 1.75rem;
+  border: 1px solid rgba(247, 246, 242, 0.08);
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.testimonial-card:hover { border-color: rgba(247, 246, 242, 0.18); }
+
+.testimonial-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 0.85rem;
+}
+
+.testimonial-stars svg { width: 12px; height: 12px; fill: var(--highlight); }
+
+.testimonial-card blockquote {
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: rgba(247, 246, 242, 0.6);
+  margin-bottom: 1rem;
+}
+
+.testimonial-card cite {
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(247, 246, 242, 0.35);
+}
+
+/* ═══════════ AREAS ═══════════ */
+.areas {
+  padding: 7rem 8%;
+  background: var(--white);
+}
+
+.areas-inner {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.areas-desc {
+  font-size: 0.92rem;
+  color: var(--caption);
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.areas-map {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.areas-map iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+  filter: saturate(0.7) contrast(1.05);
+  transition: filter 0.4s;
+}
+
+.areas-map:hover iframe { filter: saturate(1) contrast(1); }
+
+.areas-towns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.areas-towns span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--caption);
+}
+
+.areas-towns span.home {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+
+/* ═══════════ CTA / CONTACT ═══════════ */
+.cta {
+  padding: 7rem 8%;
+}
+
+.cta-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.cta-left { max-width: 460px; }
+
+.cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.12;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+}
+
+.cta-title em { font-style: italic; font-weight: 400; }
+
+.cta-body {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--caption);
+  margin-bottom: 2.5rem;
+}
+
+.cta-contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: color 0.3s;
+}
+
+.cta-contact-item:hover { color: var(--accent); }
+
+.cta-contact-icon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.cta-contact-item:hover .cta-contact-icon { border-color: var(--accent); background: rgba(44,62,45,0.04); }
+.cta-contact-icon svg { width: 18px; height: 18px; }
+
+.cta-contact-text strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cta-contact-text span {
+  font-size: 0.78rem;
+  color: var(--caption);
+}
+
+.cta-social {
+  display: flex;
+  gap: 0.65rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.cta-social a {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-social a:hover { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.cta-social a svg { width: 16px; height: 16px; }
+
+/* Contact form */
+.cta-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+
+.cta-form h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.cta-form .form-sub {
+  font-size: 0.82rem;
+  color: var(--caption);
+  margin-bottom: 1.75rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group.full { grid-column: 1 / -1; }
+
+.form-group label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--bg);
+  transition: border-color 0.3s;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--accent);
+}
+
+.form-group textarea { resize: vertical; min-height: 100px; }
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237D7972' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-submit {
+  margin-top: 1.25rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* ═══════════ REVIEWS CTA ═══════════ */
+.reviews-cta {
+  padding: 5rem 8%;
+  background: var(--ink);
+  text-align: center;
+}
+
+.reviews-cta .section-label { color: var(--warm-stone); }
+
+.reviews-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--bg);
+  margin-bottom: 0.75rem;
+}
+
+.reviews-cta h2 em { font-style: italic; font-weight: 400; }
+
+.reviews-cta p {
+  font-size: 0.95rem;
+  color: rgba(247,246,242,0.5);
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.reviews-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.review-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.95rem 2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.review-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+.review-btn--google {
+  background: #fff;
+  color: var(--ink);
+}
+
+.review-btn--google:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(255,255,255,0.15);
+}
+
+.review-btn--yelp {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.review-btn--yelp:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.4);
+  transform: translateY(-2px);
+}
+
+.reviews-cta-stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.reviews-cta-stars svg { width: 18px; height: 18px; fill: var(--highlight); }
+
+/* ═══════════ FOOTER ═══════════ */
+.footer {
+  padding: 4rem 8% 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand-text {
+  font-size: 0.88rem;
+  color: var(--caption);
+  line-height: 1.7;
+  margin-top: 1rem;
+  max-width: 280px;
+}
+
+.footer h5 {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 1.15rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-links a, .footer-links span {
+  color: var(--caption);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: var(--ink); }
+
+.footer-social {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+
+.footer-social a {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--caption);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-social a:hover { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.footer-social a svg { width: 14px; height: 14px; }
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.75rem;
+  color: var(--caption);
+}
+
+.footer-bottom a { color: var(--caption); text-decoration: none; transition: color 0.3s; }
+.footer-bottom a:hover { color: var(--ink); }
+
+/* ═══════════ SCROLL REVEALS ═══════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+.reveal-d5 { transition-delay: 0.5s; }
+
+/* ═══════════ MOBILE MENU ═══════════ */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.mobile-menu.open { opacity: 1; pointer-events: all; }
+
+.mobile-menu a {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.mobile-menu a:hover { color: var(--accent); }
+
+.mobile-menu .close-btn {
+  position: absolute;
+  top: 1.25rem; right: 1.5rem;
+  background: none; border: none;
+  font-size: 1.5rem; cursor: pointer;
+  color: var(--ink);
+}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+/* ═══════════ TABLET (1024px) ═══════════ */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-step { border-left: none !important; border-top: 1px solid var(--border); padding: 2rem 0; }
+  .process-step:first-child { border-top: none; padding-left: 0 !important; }
+  .process-step::before { top: -1px; left: 0; width: 0; height: 1px !important; }
+  .process-step.visible::before { width: 100% !important; }
+  .footer-top { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .showcase-image { background-attachment: scroll; }
+  .cta-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .cta-left { max-width: none; }
+}
+
+/* ═══════════ MOBILE (768px) ═══════════ */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav { padding: 1rem 5%; }
+  .nav.scrolled { padding: 0.75rem 5%; }
+  .nav-links { display: none; }
+  .mobile-toggle { display: flex; }
+  .nav-logo-icon { width: 32px; height: 32px; }
+  .nav-logo-mark { font-size: 1.1rem; }
+  .nav-logo-sub { font-size: 0.45rem; letter-spacing: 0.2em; }
+
+  /* Hero */
+  .hero-full { min-height: 100svh; min-height: 100vh; }
+  .hero-content { padding: 0 6%; max-width: 100%; }
+  .hero-content h1 { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+  .hero-eyebrow { font-size: 0.58rem; letter-spacing: 0.25em; }
+  .hero-body { font-size: 0.92rem; margin-bottom: 2rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 0.85rem; }
+  .btn-hero, .btn-ghost { justify-content: center; padding: 1rem 1.75rem; font-size: 0.85rem; }
+  .hero-scroll span { font-size: 0.5rem; }
+  .hero-dots { bottom: 5rem; }
+  .hero-dot { width: 28px; }
+
+  /* Trust bar */
+  .trust-bar { grid-template-columns: repeat(2, 1fr); }
+  .trust-item { padding: 1.75rem 1rem; }
+  .trust-item:nth-child(2)::after { display: none; }
+  .trust-num { font-size: 2rem; }
+  .trust-label { font-size: 0.6rem; }
+  .trust-badge { font-size: 0.52rem; }
+
+  /* Intro */
+  .intro { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 6%; }
+  .intro-left { position: static; }
+  .section-num { font-size: 3rem; }
+  .section-title { font-size: clamp(1.75rem, 6vw, 2.2rem); }
+  .intro-text p { font-size: 0.92rem; }
+  .intro-text p:first-child { font-size: 1.02rem; }
+  .intro-features { grid-template-columns: 1fr; gap: 0.65rem; margin-top: 2rem; padding-top: 2rem; }
+  .intro-feature { font-size: 0.82rem; }
+
+  /* Services */
+  .services { padding: 0 6% 4rem; }
+  .services-header { margin-bottom: 2.5rem; }
+  .services-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .service-card { aspect-ratio: 16/10; }
+  .service-card p { max-height: 80px; opacity: 1; }
+  .service-card-content { padding: 1.5rem; }
+  .service-card h3 { font-size: 1.15rem; }
+
+  /* Showcase */
+  .showcase-image { height: 55vh; min-height: 350px; }
+  .showcase-overlay { padding: 2.5rem 6%; }
+  .showcase-text h2 { font-size: clamp(1.6rem, 5.5vw, 2.2rem); }
+  .showcase-text p { font-size: 0.88rem; }
+
+  /* Portfolio */
+  .portfolio { padding: 4rem 0; }
+  .portfolio-header { padding: 0 6%; flex-direction: column; align-items: flex-start; gap: 0.75rem; margin-bottom: 2.5rem; }
+  .portfolio-scroll { padding: 0 6%; gap: 1rem; }
+  .portfolio-card { width: 280px; }
+  .portfolio-card-img { aspect-ratio: 3/4; }
+  .portfolio-card h4 { font-size: 1rem; }
+  .portfolio-card p { font-size: 0.75rem; }
+  .portfolio-nav { padding: 2rem 6% 0; }
+  .portfolio-nav button { width: 38px; height: 38px; }
+
+  /* Instagram bar */
+  .insta-bar { flex-direction: column; gap: 0.35rem; padding: 2rem 6%; }
+  .insta-bar a { font-size: 0.82rem; }
+  .insta-bar span { font-size: 0.75rem; }
+
+  /* Process */
+  .process { padding: 4rem 6%; }
+  .process-header { margin-bottom: 2.5rem; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-step h4 { font-size: 1.1rem; }
+  .process-step p { font-size: 0.82rem; }
+
+  /* Testimonials */
+  .testimonials { padding: 4rem 6%; }
+  .testimonial-featured { padding-left: 1.5rem; }
+  .testimonial-featured blockquote { font-size: 1.15rem; line-height: 1.55; }
+  .testimonial-card { padding: 1.25rem; }
+  .testimonial-card blockquote { font-size: 0.82rem; }
+
+  /* Areas */
+  .areas { padding: 4rem 6%; }
+  .areas-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .areas-map iframe { height: 280px; }
+  .areas-towns { gap: 0.25rem 0.5rem; }
+  .areas-towns span { font-size: 0.7rem; }
+
+  /* CTA / Contact */
+  .cta { padding: 4rem 6%; }
+  .cta-title { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+  .cta-body { font-size: 0.92rem; margin-bottom: 2rem; }
+  .cta-contact-icon { width: 40px; height: 40px; }
+  .cta-contact-text strong { font-size: 0.88rem; }
+  .cta-form { padding: 1.5rem; }
+  .cta-form h3 { font-size: 1.1rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-group input, .form-group textarea, .form-group select { padding: 0.85rem 1rem; font-size: 16px; }
+  .form-submit { padding: 1rem 1.75rem; }
+
+  /* Footer */
+  .footer { padding: 3rem 6% 1.5rem; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+  .footer-brand-text { max-width: none; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+
+  /* Mobile menu polish */
+  .mobile-menu a { font-size: 1.5rem; }
+  .mobile-menu .close-btn { top: 1rem; right: 1.25rem; font-size: 1.75rem; }
+}
+
+/* ═══════════ SMALL PHONES (390px) ═══════════ */
+@media (max-width: 390px) {
+  .hero-content h1 { font-size: 2rem; }
+  .hero-body { font-size: 0.85rem; }
+  .trust-bar { grid-template-columns: 1fr 1fr; }
+  .trust-num { font-size: 1.75rem; }
+  .trust-item { padding: 1.25rem 0.75rem; }
+  .section-num { font-size: 2.5rem; }
+  .service-card { aspect-ratio: 4/3; }
+  .portfolio-card { width: 260px; }
+  .cta-contact-text strong { font-size: 0.82rem; }
+  .testimonial-featured blockquote { font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav hero-mode" id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stacked stone layers forming abstract "RB" monogram -->
+        <rect class="logo-stone" x="2" y="4" width="36" height="5" rx="1"/>
+        <rect class="logo-stone" x="2" y="12" width="20" height="5" rx="1"/>
+        <rect class="logo-accent" x="24" y="12" width="14" height="5" rx="1"/>
+        <rect class="logo-stone" x="2" y="20" width="36" height="5" rx="1"/>
+        <rect class="logo-accent" x="2" y="28" width="14" height="5" rx="1"/>
+        <rect class="logo-stone" x="18" y="28" width="20" height="5" rx="1"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-mark">Reda Brothers</div>
+      <div class="nav-logo-sub">Landscape &amp; Hardscape</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta-link">Free Estimate</a></li>
+  </ul>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="closeMobile()">&times;</button>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+  <a href="#process" onclick="closeMobile()">Process</a>
+  <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero-full">
+  <div class="hero-slideshow" id="heroSlideshow">
+    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1734079692147-c6fc9438a2d0?w=1920&q=85&auto=format')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1746347319314-3b215761c973?w=1920&q=85&auto=format')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1772306610958-b735e12443a8?w=1920&q=85&auto=format')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1760643571416-8b2a08504a84?w=1920&q=85&auto=format')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1739927422552-ceacb934a36c?w=1920&q=85&auto=format')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Landscape &amp; Hardscape Experts — Flanders, NJ</div>
+    <h1>Crafting Outdoor Spaces<br>for <em>Exceptional Living</em></h1>
+    <p class="hero-body">Custom poolscapes, stone patios, outdoor kitchens, and estate landscaping — designed and built for the finest properties across Northern New Jersey since 1997.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-hero">
+        Get a Free Estimate
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#portfolio" class="btn-ghost">
+        View Our Work
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-mouse"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item reveal">
+    <div class="trust-num">28</div>
+    <div class="trust-label">Years in Business</div>
+    <div class="trust-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Est. 1997
+    </div>
+  </div>
+  <div class="trust-item reveal reveal-d1">
+    <div class="trust-num">5.0</div>
+    <div class="trust-label">Star Rating</div>
+    <div class="trust-badge">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+      Verified Reviews
+    </div>
+  </div>
+  <div class="trust-item reveal reveal-d2">
+    <div class="trust-num">A+</div>
+    <div class="trust-label">BBB Rating</div>
+    <div class="trust-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Accredited
+    </div>
+  </div>
+  <div class="trust-item reveal reveal-d3">
+    <div class="trust-num">100%</div>
+    <div class="trust-label">Client Satisfaction</div>
+    <div class="trust-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Family Owned
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro" id="about">
+  <div class="intro-left">
+    <div class="section-num reveal">01</div>
+    <div class="section-label reveal reveal-d1">Our Practice</div>
+    <h2 class="section-title reveal reveal-d2">Landscape &amp; hardscape<br>experts since <em>1997</em></h2>
+  </div>
+  <div>
+    <div class="intro-text">
+      <p class="reveal">For more than two decades, Reda Brothers Landscape has set the standard for excellence within the landscape and hardscape industry throughout Northern New Jersey.</p>
+      <p class="reveal reveal-d1">Based in Flanders, New Jersey, we specialize in high-end landscape design, hardscape construction, and outdoor living environments — custom poolscapes, waterfalls, architectural stonework, outdoor kitchens, and complete estate transformations. Every project reflects our commitment to precision, premium materials, and timeless design.</p>
+      <p class="reveal reveal-d2">As a family-owned firm led by John Reda, we bring a level of personal investment that larger operations simply cannot match. When you work with Reda Brothers, you work directly with the craftsmen who oversee every stone, every joint, every detail.</p>
+    </div>
+    <div class="intro-features reveal reveal-d3">
+      <div class="intro-feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Fully Licensed &amp; Insured
+      </div>
+      <div class="intro-feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Family Owned &amp; Operated
+      </div>
+      <div class="intro-feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Premium Materials Only
+      </div>
+      <div class="intro-feature">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Complimentary Estimates
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header">
+    <div class="section-num reveal">02</div>
+    <div class="section-label reveal reveal-d1">Expertise</div>
+    <h2 class="section-title reveal reveal-d2">What We <em>Build</em></h2>
+  </div>
+
+  <div class="services-grid">
+    <a class="service-card reveal" href="#contact">
+      <div class="service-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2024/02/poolscape.nj_-scaled.jpg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-card-num">i</div>
+        <h3>Poolscapes &amp; Water Features</h3>
+        <p>Custom pool surrounds, waterfalls, fountains, and reflecting pools — resort-caliber finishes for private estates.</p>
+      </div>
+    </a>
+    <a class="service-card reveal reveal-d1" href="#contact">
+      <div class="service-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2024/02/specialty.paver_.patio_.hardscape.firepit-scaled.jpg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-card-num">ii</div>
+        <h3>Patios &amp; Outdoor Living</h3>
+        <p>Bluestone and paver patios with fire pits, outdoor kitchens, built-in seating, and pergola structures.</p>
+      </div>
+    </a>
+    <a class="service-card reveal reveal-d2" href="#contact">
+      <div class="service-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2024/02/hardscape.retainingwall.stairs.patio_.nj_.install-scaled.jpg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-card-num">iii</div>
+        <h3>Walls &amp; Structural Stone</h3>
+        <p>Retaining walls, seat walls, staircases, and architectural stone features — engineered for permanence.</p>
+      </div>
+    </a>
+    <a class="service-card reveal reveal-d3" href="#contact">
+      <div class="service-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2024/02/hardscape.paver_.walkway.entrance-scaled.jpg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-card-num">iv</div>
+        <h3>Driveways &amp; Walkways</h3>
+        <p>Grand paver driveways, Belgian block borders, and custom walkways that set the tone for your property.</p>
+      </div>
+    </a>
+    <a class="service-card reveal reveal-d4" href="#contact">
+      <div class="service-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2024/02/specialty.outdoor.kitchen.install.chester.nj_-scaled.jpg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-card-num">v</div>
+        <h3>Outdoor Kitchens &amp; Fire</h3>
+        <p>Custom outdoor kitchens, fire pits, fireplaces, and entertainment areas built for year-round enjoyment.</p>
+      </div>
+    </a>
+    <a class="service-card reveal reveal-d5" href="#contact">
+      <div class="service-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2024/02/specialty.outdoor.hardscape.landscape.flanders.nj_-scaled.jpg')"></div>
+      <div class="service-card-overlay"></div>
+      <div class="service-card-content">
+        <div class="service-card-num">vi</div>
+        <h3>Estate Landscaping</h3>
+        <p>Complete property transformations — grading, drainage, specimen plantings, and full landscape design.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="showcase">
+  <div class="showcase-image" style="background-image:url('https://images.unsplash.com/photo-1635108199327-7aa88bdad791?w=1920&q=85&auto=format')"></div>
+  <div class="showcase-overlay">
+    <div class="showcase-text">
+      <div class="section-label">The Reda Brothers Difference</div>
+      <h2>We Don't Just Build Patios.<br>We Create <em>Destinations.</em></h2>
+      <p>Every project begins with your vision and ends with an outdoor space that redefines how you live, entertain, and experience your home. Poolscapes and water features are our specialty — this is hardscape elevated to art.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <div class="section-num reveal">03</div>
+      <div class="section-label reveal reveal-d1">Selected Work</div>
+      <h2 class="section-title reveal reveal-d2">Recent <em>Projects</em></h2>
+    </div>
+    <a href="https://www.instagram.com/reda_brothers_landscaping/" target="_blank" rel="noopener" class="btn-text reveal">
+      See all on Instagram
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="portfolio-scroll" id="portfolioScroll">
+    <a class="portfolio-card" href="#contact">
+      <div class="portfolio-card-img">
+        <div class="portfolio-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2018/05/paver_patio.jpg')"></div>
+        <span class="portfolio-card-tag">Paver Patio</span>
+      </div>
+      <h4>Flanders Estate</h4>
+      <p>Complete paver patio with stone columns and fresh sod installation</p>
+    </a>
+    <a class="portfolio-card" href="#contact">
+      <div class="portfolio-card-img">
+        <div class="portfolio-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2021/03/IMG_0374-2.jpg')"></div>
+        <span class="portfolio-card-tag">Walkway</span>
+      </div>
+      <h4>Flanders Residence</h4>
+      <p>Curved paver walkway with circular accent and stone staircase</p>
+    </a>
+    <a class="portfolio-card" href="#contact">
+      <div class="portfolio-card-img">
+        <div class="portfolio-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2021/03/IMG_1066-1.jpg')"></div>
+        <span class="portfolio-card-tag">Hardscape</span>
+      </div>
+      <h4>Chester Property</h4>
+      <p>Custom paver walkway with landscape beds and fresh mulch</p>
+    </a>
+    <a class="portfolio-card" href="#contact">
+      <div class="portfolio-card-img">
+        <div class="portfolio-card-bg" style="background-image:url('https://redabrotherslandscaping.com/wp-content/uploads/2018/05/walkway-2014a.jpg')"></div>
+        <span class="portfolio-card-tag">Natural Stone</span>
+      </div>
+      <h4>Budd Lake Walkway</h4>
+      <p>Multi-color flagstone walkway with ornamental grasses</p>
+    </a>
+    <a class="portfolio-card" href="#contact">
+      <div class="portfolio-card-img">
+        <div class="portfolio-card-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80&auto=format')"></div>
+        <span class="portfolio-card-tag">Full Property</span>
+      </div>
+      <h4>Morris County Estate</h4>
+      <p>Complete outdoor transformation with poolscape, patio, and landscape lighting</p>
+    </a>
+  </div>
+
+  <div class="portfolio-nav">
+    <button id="scrollLeft" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </button>
+    <button id="scrollRight" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- INSTAGRAM BAR -->
+<div class="insta-bar">
+  <a href="https://www.instagram.com/reda_brothers_landscaping/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+    @reda_brothers_landscaping
+  </a>
+  <span>614 posts of real project work</span>
+</div>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-header">
+    <div class="section-num reveal">04</div>
+    <div class="section-label reveal reveal-d1">How We Work</div>
+    <h2 class="section-title reveal reveal-d2">From first conversation<br>to <em>final walkthrough</em></h2>
+  </div>
+
+  <div class="process-grid">
+    <div class="process-step reveal">
+      <div class="step-num">1</div>
+      <h4>Discovery</h4>
+      <p>We visit your property, listen to your vision, assess the site, and discuss scope, materials, and budget expectations — no obligation, completely free.</p>
+    </div>
+    <div class="process-step reveal reveal-d1">
+      <div class="step-num">2</div>
+      <h4>Design</h4>
+      <p>Custom design plans with material selections, 3D renderings when needed, engineering specifications, and a detailed project timeline.</p>
+    </div>
+    <div class="process-step reveal reveal-d2">
+      <div class="step-num">3</div>
+      <h4>Construction</h4>
+      <p>Our crews execute with meticulous precision — from excavation and drainage to every cut stone and finished joint. Open communication throughout.</p>
+    </div>
+    <div class="process-step reveal reveal-d3">
+      <div class="step-num">4</div>
+      <h4>Delivery</h4>
+      <p>Final walkthrough, quality inspection, and handover. We ensure your complete satisfaction and provide care guidance for lasting beauty.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-label">05 — Client Testimonials</div>
+  <h2 class="section-title">Trusted by Homeowners<br>Across <em>Northern New Jersey</em></h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-featured">
+      <blockquote>"Their work is outstanding! We had John and the team put in a new walkway for us, and everything from discussing the price to putting down the last bit of grass seed was open and honest. Professional, high quality, and they truly care about the end result."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">KC</div>
+        <div class="testimonial-info">
+          <h5>Katie C.</h5>
+          <span>Flanders, NJ — Walkway &amp; Landscape</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-stack">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <blockquote>"The patio and retaining wall completely transformed our backyard. The Belgian block detail work was flawless. Neighbors constantly ask who did the work."</blockquote>
+        <cite>— Verified Homeowner, Chester</cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <blockquote>"Professional, punctual, and the end result exceeded every expectation. John and his crew treated our property like it was their own. Couldn't recommend them more highly."</blockquote>
+        <cite>— Verified Homeowner, Randolph</cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <blockquote>"We hired them for a full backyard redesign — patio, fire pit, retaining walls, and plantings. The quality of the stonework is remarkable. Worth every penny."</blockquote>
+        <cite>— Verified Homeowner, Bernardsville</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="areas" id="areas">
+  <div class="areas-inner">
+    <div>
+      <div class="section-num reveal">06</div>
+      <div class="section-label reveal reveal-d1">Service Area</div>
+      <h2 class="section-title reveal reveal-d2">Proudly serving<br><em>Northern New Jersey</em></h2>
+      <p class="areas-desc reveal reveal-d3">Based in Flanders, our work can be found across some of Morris County's most distinguished neighborhoods. We also serve select properties in Somerset, Sussex, Hunterdon, and Warren counties.</p>
+    </div>
+    <div class="reveal reveal-d2">
+      <div class="areas-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193737.64034654594!2d-74.70028849999999!3d40.8295258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c399ede0116371%3A0xe490e754e2c7b0cb!2sMorris%20County%2C%20NJ!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Reda Brothers Service Area - Morris County, NJ">
+        </iframe>
+      </div>
+      <div class="areas-towns">
+        <span class="home">Flanders</span>
+        <span>Chester</span>
+        <span>Mendham</span>
+        <span>Bernardsville</span>
+        <span>Far Hills</span>
+        <span>Peapack-Gladstone</span>
+        <span>Roxbury</span>
+        <span>Randolph</span>
+        <span>Mount Olive</span>
+        <span>Morristown</span>
+        <span>Hackettstown</span>
+        <span>Budd Lake</span>
+        <span>Long Valley</span>
+        <span>Chatham</span>
+        <span>Madison</span>
+        <span>Warren</span>
+        <span>Basking Ridge</span>
+        <span>Bedminster</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section class="cta" id="contact">
+  <div class="cta-layout">
+    <div class="cta-left">
+      <div class="section-label reveal">Begin Your Project</div>
+      <h2 class="cta-title reveal reveal-d1">Let's Create Something<br><em>Extraordinary</em></h2>
+      <p class="cta-body reveal reveal-d2">Every great outdoor space starts with a conversation. Schedule your complimentary on-site estimate and let's explore what's possible for your property.</p>
+
+      <div class="cta-contact-row reveal reveal-d3">
+        <a href="tel:9086843381" class="cta-contact-item">
+          <div class="cta-contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="cta-contact-text">
+            <strong>(908) 684-3381</strong>
+            <span>Mon — Sun, 8am — 6pm</span>
+          </div>
+        </a>
+        <a href="mailto:info@redabrotherslandscaping.com" class="cta-contact-item">
+          <div class="cta-contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+          </div>
+          <div class="cta-contact-text">
+            <strong>info@redabrotherslandscaping.com</strong>
+            <span>We respond within 24 hours</span>
+          </div>
+        </a>
+        <div class="cta-contact-item" style="cursor:default;">
+          <div class="cta-contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="cta-contact-text">
+            <strong>Flanders, NJ 07836</strong>
+            <span>Serving all of Morris County &amp; beyond</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-social reveal reveal-d4">
+        <a href="https://www.instagram.com/reda_brothers_landscaping/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/reda.brothers.landscaping" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.houzz.com/professionals/landscape-contractors/reda-brothers-landscape-inc-pfvwus-pf~1384907018" target="_blank" rel="noopener" aria-label="Houzz">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2.1v7.4l6.4 3.7V6.1l-6.4-4zM5.1 8.4v7.1l6.4 3.7V12l-6.4-3.6zM12.5 12v7.5l6.4-3.8V8.4L12.5 12z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="cta-form reveal reveal-d2">
+      <h3>Request a Free Estimate</h3>
+      <p class="form-sub">Fill out the form and we'll get back to you within 24 hours.</p>
+
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Smith">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(908) 555-1234">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="service">Project Type</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="poolscape">Poolscape &amp; Water Features</option>
+              <option value="patio">Patio &amp; Outdoor Living</option>
+              <option value="walls">Walls &amp; Structural Stone</option>
+              <option value="driveway">Driveway &amp; Walkway</option>
+              <option value="kitchen">Outdoor Kitchen &amp; Fire</option>
+              <option value="landscape">Estate Landscaping</option>
+              <option value="other">Other / Full Property</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your vision, timeline, and any specific materials or features you have in mind..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn-dark form-submit">
+          Send Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS CTA -->
+<section class="reviews-cta">
+  <div class="section-label reveal">Loved Working With Us?</div>
+  <div class="reviews-cta-stars reveal reveal-d1">
+    <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+  </div>
+  <h2 class="reveal reveal-d2">Help Us Keep Our<br><em>5-Star Reputation</em></h2>
+  <p class="reveal reveal-d3">Your feedback means everything to our family business. A quick review helps other homeowners find quality craftsmen they can trust.</p>
+  <div class="reviews-buttons reveal reveal-d4">
+    <a href="https://www.google.com/search?q=Reda+Brothers+Landscaping+Flanders+NJ#lrd=*" target="_blank" rel="noopener" class="review-btn review-btn--google">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+      Review on Google
+    </a>
+    <a href="https://www.yelp.com/writeareview/biz/reda-brothers-landscaping-hackettstown" target="_blank" rel="noopener" class="review-btn review-btn--yelp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.14 2C6.07 2 2.68 5.48 2.68 5.48l3.56 4.22s.55-.67 1.04-1.04c.5-.38 1.1-.38 1.1-.38h.02c.52 0 .87.41.87.41L12.93 15s.16.3.16.6c0 .44-.34.73-.34.73l-4.56 3.2s-.53.35-.53.86c0 .33.2.64.2.64l2.2 3.12s.34.5.86.5c.36 0 .67-.21.67-.21l4.83-4.14s.34-.3.34-.76c0-.3-.16-.56-.16-.56l-3.03-4.96s-.22-.37-.22-.72c0-.42.3-.72.3-.72l5.2-3.38s.5-.34.5-.88c0-.36-.22-.66-.22-.66l-2.42-3.28S15.91 2 12.14 2z"/>
+      </svg>
+      Review on Yelp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <a href="#" class="nav-logo" style="margin-bottom:0">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="logo-stone" x="2" y="4" width="36" height="5" rx="1"/>
+            <rect class="logo-stone" x="2" y="12" width="20" height="5" rx="1"/>
+            <rect class="logo-accent" x="24" y="12" width="14" height="5" rx="1"/>
+            <rect class="logo-stone" x="2" y="20" width="36" height="5" rx="1"/>
+            <rect class="logo-accent" x="2" y="28" width="14" height="5" rx="1"/>
+            <rect class="logo-stone" x="18" y="28" width="20" height="5" rx="1"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <div class="nav-logo-mark">Reda Brothers</div>
+          <div class="nav-logo-sub">Landscape &amp; Hardscape</div>
+        </div>
+      </a>
+      <p class="footer-brand-text">Premium landscape design and hardscape construction for distinguished properties across Northern New Jersey. Family-owned since 1997.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/reda_brothers_landscaping/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/reda.brothers.landscaping" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.houzz.com/professionals/landscape-contractors/reda-brothers-landscape-inc-pfvwus-pf~1384907018" target="_blank" rel="noopener" aria-label="Houzz">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2.1v7.4l6.4 3.7V6.1l-6.4-4zM5.1 8.4v7.1l6.4 3.7V12l-6.4-3.6zM12.5 12v7.5l6.4-3.8V8.4L12.5 12z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <ul class="footer-links">
+        <li><a href="#services">Poolscapes &amp; Water Features</a></li>
+        <li><a href="#services">Patios &amp; Outdoor Living</a></li>
+        <li><a href="#services">Walls &amp; Stonework</a></li>
+        <li><a href="#services">Driveways &amp; Walkways</a></li>
+        <li><a href="#services">Outdoor Kitchens &amp; Fire</a></li>
+        <li><a href="#services">Estate Landscaping</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#areas">Service Areas</a></li>
+        <li><a href="https://www.instagram.com/reda_brothers_landscaping/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul class="footer-links">
+        <li><a href="tel:9086843381">(908) 684-3381</a></li>
+        <li><a href="mailto:info@redabrotherslandscaping.com">info@redabrotherslandscaping.com</a></li>
+        <li><span>Flanders, NJ 07836</span></li>
+        <li><span>Mon — Sun, 8am — 6pm</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Reda Brothers Landscape Inc. All rights reserved.</span>
+    <span>Website by <a href="https://novarian.ai" target="_blank">Novarian</a></span>
+  </div>
+</footer>
+
+<script>
+// Nav scroll + hero mode
+const nav = document.getElementById('nav');
+const heroSection = document.querySelector('.hero-full');
+function updateNav() {
+  const past = window.scrollY > 60;
+  nav.classList.toggle('scrolled', past);
+  nav.classList.toggle('hero-mode', window.scrollY < heroSection.offsetHeight - 100);
+}
+window.addEventListener('scroll', updateNav, { passive: true });
+updateNav();
+
+// Mobile menu
+const mobileToggle = document.getElementById('mobileToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+mobileToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+function closeMobile() { mobileMenu.classList.remove('open'); }
+
+// Hero slideshow
+const slides = document.querySelectorAll('.hero-slide');
+const dotsContainer = document.getElementById('heroDots');
+let current = 0, timer;
+
+slides.forEach((_, i) => {
+  const d = document.createElement('div');
+  d.className = 'hero-dot' + (i === 0 ? ' active' : '');
+  d.innerHTML = '<div class="hero-dot-fill"></div>';
+  d.addEventListener('click', () => go(i));
+  dotsContainer.appendChild(d);
+});
+
+function go(i) {
+  slides[current].classList.remove('active');
+  dotsContainer.children[current].classList.remove('active');
+  current = i;
+  slides[current].classList.add('active');
+  dotsContainer.children[current].classList.add('active');
+  clearInterval(timer);
+  timer = setInterval(() => go((current + 1) % slides.length), 7000);
+}
+
+timer = setInterval(() => go((current + 1) % slides.length), 7000);
+
+// Scroll reveals
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.reveal, .process-step').forEach(el => revealObs.observe(el));
+
+// Portfolio scroll
+const ps = document.getElementById('portfolioScroll');
+document.getElementById('scrollLeft').addEventListener('click', () => ps.scrollBy({ left: -380, behavior: 'smooth' }));
+document.getElementById('scrollRight').addEventListener('click', () => ps.scrollBy({ left: 380, behavior: 'smooth' }));
+
+// Smooth anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const t = document.querySelector(this.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+// Contact form handler
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  const originalHTML = btn.innerHTML;
+
+  btn.innerHTML = 'Sending...';
+  btn.disabled = true;
+
+  // Simulate send (replace with real endpoint in production)
+  setTimeout(() => {
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Request Sent!';
+    btn.style.background = 'var(--accent)';
+    form.reset();
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.disabled = false;
+      btn.style.background = '';
+    }, 3000);
+  }, 1200);
+}
+
+// Phone number formatting
+const phoneInput = document.getElementById('phone');
+if (phoneInput) {
+  phoneInput.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g, '');
+    if (v.length >= 6) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
+    else if (v.length >= 3) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
+    this.value = v;
+  });
+}
+</script>
+</body>
+</html>
